@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/start_view"
+    android:transitionName="shared_element_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@color/app_src_clr"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@color/white"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/tb"
+        layout="@layout/bg_lt"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd_lt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="100dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="50dp"
+        android:background="@color/app_src_clr_dark"
+        android:layout_marginLeft="-20dp"
+        android:backgroundTint="@color/app_src_clr_dark">
+    <TextView
+        android:id="@+id/title_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marvel Heroes List"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+         android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+
+         />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        app:layout_constraintTop_toBottomOf="@+id/cd_lt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:theme="@style/progressBarBlue"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

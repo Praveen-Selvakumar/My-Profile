@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/book_icn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/book"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+         />
+
+    <TextView
+        android:id="@+id/edu_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Education"
+        app:layout_constraintTop_toTopOf="parent"
+         android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+         android:paddingLeft="5dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/book_icn"
+        />
+
+    <TextView
+        android:id="@+id/degree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Bachelor of Engineering"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edu_txt"
+         android:textColor="@color/black"
+         android:layout_marginTop="0dp"
+        android:layout_marginLeft="50dp"
+         android:textSize="16dp"
+        />
+     <TextView
+        android:id="@+id/branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   (Computer science, 2015-19)"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/degree"
+         android:textColor="@color/dark_grey"
+         android:layout_marginTop="-5dp"
+        android:layout_marginLeft="50dp"
+         android:textSize="14dp"
+         />
+
+    <TextView
+        android:id="@+id/cgpa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- CGPA = 6.9%"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/branch"
+        android:textColor="@color/black"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="16dp"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

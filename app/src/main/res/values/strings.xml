@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Profile</string>
+    <string name="infy_txt">Worked with BOFA Project network using retrofit
+API integration , did a POC to satisfy client and
+changing old school way of data fetching into
+Retrofit and worked with Google TV on bug fixing</string>
+    <string name="tv_llp_txt">My accomplishment ,
+did NPSTJ public school application, whole
+school application in one month and BUYAWAY
+(E-commerce application)from scratch includes
+whole UI design , API integration and many
+features .</string>
+
+    <string name="tv_txt">Did Marketing Tracking
+applications for collection agents for private
+concern , South Indian Foodie app(app for
+reviewing cuisines and restaurants) .And did one
+service based application from scratch named
+as Attendance App (Care India) .         
+</string>
+    
+    
+    <string name="content">Steven Rogers was born in the Lower East Side of Manhattan, New York City, in 1925 to poor Irish immigrants, Sarah and Joseph Rogers.[54] Joseph died when Steve was a child, and Sarah died of pneumonia while Steve was a teen. By early 1940, before Americas entry into World War II, Rogers is a tall, scrawny fine arts student specializing in illustration and a comic book writer and artist.</string>
+    
+    
+ </resources>

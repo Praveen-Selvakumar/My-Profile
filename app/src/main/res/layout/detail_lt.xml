@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/white"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/captain_america"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="5dp"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toRightOf="@id/profile_img"
+        app:layout_constraintTop_toBottomOf="@+id/profile_img"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="-90dp"
+        app:cardElevation="9dp"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avengers"
+            android:background="@drawable/curvy_rect"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_marginTop="2.5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="60dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Captain America"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_img"
+        android:layout_marginTop="40dp"/>
+
+
+    <TextView
+        android:id="@+id/realname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steve Rogers"
+        android:textColor="@color/dark_grey"
+         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:layout_marginTop="0dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/realname"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+         app:cardElevation="5dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/publisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marvel Comics"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:id="@+id/cnt_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/content"
+                android:layout_marginTop="-20dp"
+                android:layout_below="@+id/publisher"
+                android:padding = "30dp"
+                />
+
+            <TextView
+                android:id="@+id/createdby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Joe Simon"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_below="@+id/cnt_txt"
+                android:layout_marginTop="-20dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/app_src_clr_dark"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="26dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

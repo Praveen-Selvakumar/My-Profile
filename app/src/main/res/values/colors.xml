@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="app_src_clr">#3fbffe</color>
+    <color name="app_src_clr_lite">#203fbffe</color>
+    <color name="app_src_clr_dark">#3c83b1</color>
+    <color name="dark_grey">#939393</color>
+    <color name="dark_green">#228B22</color>
+    <color name="transparent">#00000000</color>
+
+</resources>
